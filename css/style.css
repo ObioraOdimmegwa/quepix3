@@ -3659,6 +3659,17 @@ body.mrs-v52 .marshall-the_content .marshall-works-heading-inner h2 {
 
   .simply-word{
     font-size: 16px;
+    font-family: 'Sora', sans-serif;
+    
+  }
+
+  .simply-amount{
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
+  }
+
+  .cdesc{
+    font-size: 18px;
   }
 
 @media (max-width: 700px){
@@ -3676,15 +3687,22 @@ body.mrs-v52 .marshall-the_content .marshall-works-heading-inner h2 {
 
   .simply-amount{
     font-size: 35px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
   }
 
   .simply-word{
     font-size: 12px;
+    font-family: 'Sora', sans-serif;
   }
 
   .tit{
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .cdesc{
+    font-size: 14px;
   }
 
   
