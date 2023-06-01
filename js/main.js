@@ -86,7 +86,7 @@ if ( $("#countdown_text_layout").is_exist() ) {
 if ( $('.simply-countdown-column').is_exist() ) {
   simplyCountdown('.simply-countdown-column', {
       year: 2023,
-      month: 6,
+      month: 7,
       day: 1,
       enableUtc: false
   });
