@@ -227,7 +227,7 @@
                 }
             },
             autoplay: {
-                delay: 3000
+                delay: 7000
             },
             breakpoints: {
                 1199: {
