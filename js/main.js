@@ -205,7 +205,7 @@
             slidesPerView: 5,
             spaceBetween: 10,
             slidesPerGroup: 5,
-            loop: false,
+            loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev"
@@ -245,6 +245,55 @@
             }
         });
     });
+
+    $(".swiper-group-4").each(function () {
+      var swiper_4_items = new Swiper(this, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "custom",
+          renderCustom: function (swiper, current, total) {
+            var customPaginationHtml = "";
+            for (var i = 0; i < total; i++) {
+              //Determine which pager should be activated at this time
+              if (i == current - 1) {
+                customPaginationHtml +=
+                  '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
+              } else {
+                customPaginationHtml +=
+                  '<span class="swiper-pagination-customs"></span>';
+              }
+            }
+            return customPaginationHtml;
+          },
+        },
+        autoplay: {
+          delay: 9000,
+        },
+        breakpoints: {
+          1199: {
+            slidesPerView: 1,
+          },
+          800: {
+            slidesPerView: 1,
+          },
+          400: {
+            slidesPerView: 1,
+          },
+          350: {
+            slidesPerView: 1,
+          },
+        },
+      });
+    });
+
     $(".swiper-group-2").each(function () {
         var swiper_2_items = new Swiper(this, {
             spaceBetween: 10,
