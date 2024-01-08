@@ -202,9 +202,9 @@
     });
     $(".swiper-group-3").each(function () {
         var swiper_3_items = new Swiper(this, {
-            slidesPerView: 1,
-            spaceBetween: 100,
-            slidesPerGroup: 1,
+            slidesPerView: 5,
+            spaceBetween: 10,
+            slidesPerGroup: 5,
             loop: true,
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -227,14 +227,14 @@
                 }
             },
             autoplay: {
-                delay: 7000
+                delay: 9000
             },
             breakpoints: {
                 1199: {
-                    slidesPerView: 1
+                    slidesPerView: 5
                 },
                 800: {
-                    slidesPerView: 1
+                    slidesPerView: 3
                 },
                 400: {
                     slidesPerView: 1
@@ -247,9 +247,9 @@
     });
     $(".swiper-group-2").each(function () {
         var swiper_2_items = new Swiper(this, {
-            spaceBetween: 30,
-            slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 10,
+            slidesPerView: 1,
+            spaceBetween: 10,
             slidesPerGroup: 1,
             loop: true,
             navigation: {
@@ -277,7 +277,7 @@
             },
             breakpoints: {
                 1199: {
-                    slidesPerView: 2
+                    slidesPerView: 1
                 },
                 800: {
                     slidesPerView: 1
