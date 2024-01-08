@@ -205,7 +205,7 @@
             slidesPerView: 5,
             spaceBetween: 10,
             slidesPerGroup: 5,
-            loop: true,
+            loop: false,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev"
